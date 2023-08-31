@@ -51,8 +51,10 @@ li{
     top: 61 px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+/*     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px); */
+    background: white;
+    border: solid 1px grey;
     border-radius: 14px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
