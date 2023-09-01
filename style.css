@@ -10,6 +10,7 @@ header{
     width: 100%;
 padding: 0 2rem;
 background-color: #fff;
+box-shadow: 4px 0 20px black;
 }
 
 .header-container{
@@ -20,7 +21,7 @@ background-color: #fff;
     background-position: center;
 }
 .navbar{
-    
+   
     width: 100%;
     max-width: 1200px;
     height: 60px;
@@ -51,8 +52,6 @@ li{
     top: 61 px;
     height: 0;
     width: 300px;
-/*     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px); */
     background: white;
     border: solid 1px grey;
     border-radius: 14px;
@@ -107,6 +106,7 @@ font-weight: bold;
 
    .action_btn:hover{
     scale: 1.05;
+    color: white;
    }
    .action_btn:active{
     scale: 0.9;
