@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
 	<title>Contact the team!</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -25,7 +29,7 @@
             <li><a class="text-success" href="about.html">About</a></li>
             <li><a class="text-success" href="#">Contact</a></li>
         </ul>
-        <a href="https://drive.google.com/file/d/1NOJgbxv6VimUf3fSB_3fsE9vS6NwsYal/view?usp=sharing" class="bg-success action_btn">DOWNLOAD CATALOGUE</a>
+        <a href="https://drive.google.com/file/d/1Xihv2hXLgj-0QaEIJZ6cmw13nk8we0rW/view?usp=sharing" class="bg-success action_btn">DOWNLOAD CATALOGUE</a>
         <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -35,7 +39,7 @@
       <li><a class="text-success" href="../index.html#Products">Products</a></li>
       <li><a class="text-success" href="about.html">About</a></li>
       <li><a class="text-success" href="#">Contact</a></li>
-      <li>          <a href="https://drive.google.com/file/d/1NOJgbxv6VimUf3fSB_3fsE9vS6NwsYal/view?usp=sharing" class="bg-success action_btn" style=" color: white;
+      <li>          <a href="https://drive.google.com/file/d/1Xihv2hXLgj-0QaEIJZ6cmw13nk8we0rW/view?usp=sharing" class="bg-success action_btn" style=" color: white;
         font-size: 1rem;
         font-weight: 600;
         font-family: DM Sans;
@@ -82,7 +86,7 @@
 					</div>
 					<div class="form-group">
 						<label for="phone">Contact Number</label>
-						<input type="tel" name="contact number" id="phone" class="form-element" placeholder="9xx567890" />
+						<input type="tel" name="contact number" id="phone" class="form-element" placeholder="9xx567890" style="margin-left: 48px;"/>
 					</div>
 
 
@@ -126,5 +130,14 @@
 			</div>
 		</section>
 	</main>
+  <script src="../script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
 </body>
 </html>
