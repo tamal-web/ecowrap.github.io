@@ -158,6 +158,8 @@ font-weight: bold;
   background-color: rgba(255, 255, 255, 0.1); */
   background-color: white;
 opacity: 0.8;
+border-radius: 15px;
+font-family: DM Sans;
 }
 .sec-container{
     /* max-width: 1200px; */
@@ -188,7 +190,7 @@ opacity: 0.8;
 .card{
     margin-bottom: 20px;
 }
-.container{
+.new-container{
     display: flex;
     margin: 0 auto;
     text-align: center;
@@ -247,6 +249,60 @@ opacity: 0.8;
         margin-bottom: 80px;
       
     }
+
+    .contact_us{
+    width: 100%;
+    background-image: linear-gradient(175deg, #EEE 50%, #FF9fdb 50%, #9875d7);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+
+    .name, .email, .contact_number, .company_name, .message{
+        border-radius: 16px;
+        /* border: solid 3px blueviolet; */
+        display: block;
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 12px 16 px;
+        background-color: #e7e7e7;
+      
+    }
+    label{
+        display: block;
+        margin-bottom: 5px;
+        color: #888;
+        font-size: 14px;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+        background-color: #fff;
+        padding: 32px;
+        border-radius: 16px;
+        max-width: 1280px;
+        margin: 0 auto;
+       
+;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+@media (min-width: 768px){
+    .contact_us{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
+@media (min-width: 1024px){
+    .contact_us{
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+}
 
     @media (max-width: 992px){
         .navbar .links, .navbar .action_btn{
